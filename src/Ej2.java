@@ -5,10 +5,8 @@ public class Ej2 {
         Scanner teclado = new Scanner(System.in);
 
         System.out.println("Introduce una temperatura en grados:");
-        double grados = Integer.parseInt(teclado.nextLine());
+        double grados = Double.parseDouble(teclado.nextLine());
 
-        double far = (grados*9/5)+32;
-
-        System.out.println("La temperatura en grados es:" + grados + " y la temperatura en farenheit es:" + far);
+        System.out.println("La temperatura en grados es: " + grados + " y la temperatura en farenheit es: " + (grados*9/5)+32);
     }
 }
